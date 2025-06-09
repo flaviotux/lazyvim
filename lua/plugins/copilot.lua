@@ -30,9 +30,9 @@ return {
           end,
           set = function(state)
             if state then
-              vim.cmd("Copilot enable")
+              vim.cmd "Copilot enable"
             else
-              vim.cmd("Copilot disable")
+              vim.cmd "Copilot disable"
             end
           end,
         }):map("<leader>at")
