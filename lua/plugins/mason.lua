@@ -6,10 +6,8 @@ return {
         "golangci-lint",
         "golangci-lint-langserver",
         "gopls",
-        "goimports",
-        "gofumpt",
-        "golines",
         "prettier",
+        "eslint-lsp"
       }
     end,
   },

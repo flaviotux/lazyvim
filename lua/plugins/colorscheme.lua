@@ -8,7 +8,7 @@ return {
 
       opts.integrations.snacks = {
         enabled = true,
-        indent_scope_color = "surface2"
+        indent_scope_color = "pink"
       }
 
       opts.custom_highlights = function(C)

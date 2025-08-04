@@ -1,6 +1,7 @@
 return {
   {
     "github/copilot.vim",
+    enabled = false,
     dependencies = {
       "nvim-lualine/lualine.nvim",
       optional = true,
