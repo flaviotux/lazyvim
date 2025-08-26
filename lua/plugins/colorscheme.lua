@@ -1,6 +1,7 @@
 return {
   {
     "catppuccin/nvim",
+    version = "^1.11.0",
     name = "catppuccin",
     ---@param opts CatppuccinOptions
     opts = function(_, opts)

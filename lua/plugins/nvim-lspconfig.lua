@@ -1,5 +1,6 @@
 return {
   "neovim/nvim-lspconfig",
+  version = "^2.4.0",
   opts = function(_, opts)
     opts.inlay_hints.enabled = false
 

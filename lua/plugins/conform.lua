@@ -1,38 +1,15 @@
-local supported = {
-  "css",
-  "graphql",
-  "handlebars",
-  "html",
-  "javascript",
-  "javascriptreact",
-  "json",
-  "jsonc",
-  "less",
-  "markdown",
-  "markdown.mdx",
-  "scss",
-  "typescript",
-  "typescriptreact",
-  "vue",
-  "yaml",
-}
-
 ---@module "lazy"
 ---@type LazySpec[]
 return {
   {
     "stevearc/conform.nvim",
+    version = '^9.0.0',
     opts = function(_, opts)
+      opts.default_format_opts.lsp_format = "first"
       opts.formatters_by_ft = opts.formatters_by_ft or {}
-
-      for _, ft in ipairs(supported) do
-        opts.formatters_by_ft[ft] = opts.formatters_by_ft[ft] or {}
-        opts.formatters_by_ft[ft].lsp_format = "first"
-      end
 
       opts.formatters_by_ft.go = {
         "golangci-lint",
-        lsp_format = "first"
       }
     end,
   },

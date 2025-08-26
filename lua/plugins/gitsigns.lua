@@ -1,6 +1,7 @@
 return {
   {
     "gitsigns.nvim",
+    version = "^1.0.2",
     opts = {
       current_line_blame = true,
       current_line_blame_opts = {
